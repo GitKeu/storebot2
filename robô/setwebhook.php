@@ -5,7 +5,7 @@
 $token = file_get_contents('token.txt');
 $dir = str_replace('/setwebhook.php', '/asyn.php', $_SERVER['PHP_SELF']);
 
-if (empty($token)){
+if (empty($token)){ 
 	if (!$_GET['token']){
 		die("O token informado está inválido!");
 	}else{
