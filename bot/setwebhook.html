@@ -3,7 +3,7 @@
 // error_reporting(0);
 
 $token = file_get_contents('token.txt');
-$dir = str_replace('/setwebhook.html', '/asyn.php', $_SERVER['PHP_SELF']);
+$dir = str_replace('/setwebhook.php', '/asyn.php', $_SERVER['PHP_SELF']);
 
 if (empty($token)){
 	if (!$_GET['token']){
